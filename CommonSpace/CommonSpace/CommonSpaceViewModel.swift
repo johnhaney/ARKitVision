@@ -28,6 +28,7 @@ class CommonSpaceViewModel: ARUnderstandingModel {
     override func update(_ anchor: ImageAnchor) async {
         if imageAnchors[anchor.id] == nil {
             do {
+                // TODO: you could just make an Entity() if you don't want to have a visible Sphere on the image
                 let entity = ModelEntity(mesh: .generateSphere(radius: 0.025))
                 entity.name = anchor.id.uuidString
                 entityMap[anchor.id] = entity
@@ -63,6 +64,7 @@ class CommonSpaceViewModel: ARUnderstandingModel {
             entityMap[one.id]?.addChild(rotationOne)
             rotationOne.addChild(rotationTwo)
             
+            // TODO: you could just make an Entity() if you don't want to have a visible Sphere on the image
             let homeEntity = ModelEntity(mesh: .generateSphere(radius: 0.025))
             homeEntity.name = "home"
             entityMap[home] = homeEntity

@@ -15,6 +15,8 @@ struct ImmersiveView: View {
     var body: some View {
         RealityView { content in
             content.add(model.setupContentEntity())
+        } update: { content in
+            // TODO: use model.homeEntity as the common frame of reference for the world. Look for an entity named "home" to verify that the home marker has indeed been found and you are ready to go
         }
         .task {
             do {
