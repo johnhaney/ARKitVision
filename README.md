@@ -1,5 +1,7 @@
 # ARKitVision
 
+This project was awarded Best Developer Tool / Best Open Source at Vision Dev Camp 2024 [https://visiondevcamp.org]
+
 Includes two template projects to use as starters and customize:
 
 **Common Space**
