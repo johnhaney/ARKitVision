@@ -12,12 +12,6 @@ let logger = Logger(subsystem: "com.appsyoucanmake.SimpleARKitVision", category:
 
 @main
 struct SimpleARKitVisionApp: App {
-    @State private var arModel: ARViewModel
-    
-    init() {
-        arModel = ARViewModel()
-    }
-    
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -25,7 +19,6 @@ struct SimpleARKitVisionApp: App {
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
-                .environment(arModel)
         }
     }
 }

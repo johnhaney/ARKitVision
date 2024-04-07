@@ -13,8 +13,7 @@
 		227642E82BB953DE00E2B034 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227642E72BB953DE00E2B034 /* ImmersiveView.swift */; };
 		227642EA2BB953DF00E2B034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227642E92BB953DF00E2B034 /* Assets.xcassets */; };
 		227642ED2BB953DF00E2B034 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227642EC2BB953DF00E2B034 /* Preview Assets.xcassets */; };
-		227642F52BB9545B00E2B034 /* ARUnderstandingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227642F42BB9545B00E2B034 /* ARUnderstandingModel.swift */; };
-		227642F72BB954BE00E2B034 /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227642F62BB954BE00E2B034 /* ARViewModel.swift */; };
+		59F2F3202BC38A1B002BEA77 /* ARUnderstanding in Frameworks */ = {isa = PBXBuildFile; productRef = 59F2F31F2BC38A1B002BEA77 /* ARUnderstanding */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +25,6 @@
 		227642E92BB953DF00E2B034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		227642EC2BB953DF00E2B034 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		227642EE2BB953DF00E2B034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		227642F42BB9545B00E2B034 /* ARUnderstandingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARUnderstandingModel.swift; sourceTree = "<group>"; };
-		227642F62BB954BE00E2B034 /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F2F3202BC38A1B002BEA77 /* ARUnderstanding in Frameworks */,
 				227642E22BB953DE00E2B034 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,8 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				227642E32BB953DE00E2B034 /* SimpleARKitVisionApp.swift */,
-				227642F62BB954BE00E2B034 /* ARViewModel.swift */,
-				227642F42BB9545B00E2B034 /* ARUnderstandingModel.swift */,
 				227642E52BB953DE00E2B034 /* ContentView.swift */,
 				227642E72BB953DE00E2B034 /* ImmersiveView.swift */,
 				227642E92BB953DF00E2B034 /* Assets.xcassets */,
@@ -108,6 +104,7 @@
 			name = SimpleARKitVision;
 			packageProductDependencies = (
 				227642E12BB953DE00E2B034 /* RealityKitContent */,
+				59F2F31F2BC38A1B002BEA77 /* ARUnderstanding */,
 			);
 			productName = SimpleARKitVision;
 			productReference = 227642DC2BB953DE00E2B034 /* SimpleARKitVision.app */;
@@ -137,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 227642D32BB953DE00E2B034;
+			packageReferences = (
+				59F2F31E2BC38A1B002BEA77 /* XCRemoteSwiftPackageReference "ARUnderstanding" */,
+			);
 			productRefGroup = 227642DD2BB953DE00E2B034 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -163,11 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				227642F72BB954BE00E2B034 /* ARViewModel.swift in Sources */,
 				227642E62BB953DE00E2B034 /* ContentView.swift in Sources */,
 				227642E42BB953DE00E2B034 /* SimpleARKitVisionApp.swift in Sources */,
 				227642E82BB953DE00E2B034 /* ImmersiveView.swift in Sources */,
-				227642F52BB9545B00E2B034 /* ARUnderstandingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,10 +368,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		59F2F31E2BC38A1B002BEA77 /* XCRemoteSwiftPackageReference "ARUnderstanding" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnhaney/ARUnderstanding";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		227642E12BB953DE00E2B034 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
+		};
+		59F2F31F2BC38A1B002BEA77 /* ARUnderstanding */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59F2F31E2BC38A1B002BEA77 /* XCRemoteSwiftPackageReference "ARUnderstanding" */;
+			productName = ARUnderstanding;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
