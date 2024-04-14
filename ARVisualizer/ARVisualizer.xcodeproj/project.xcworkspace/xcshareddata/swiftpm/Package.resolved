@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "arunderstanding",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/johnhaney/ARUnderstanding",
+      "state" : {
+        "revision" : "26c314c3a29024a4de661dd09916d95057d1f98f",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
