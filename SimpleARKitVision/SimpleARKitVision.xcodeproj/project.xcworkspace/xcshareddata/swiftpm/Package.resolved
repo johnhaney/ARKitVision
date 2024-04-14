@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/johnhaney/ARUnderstanding",
       "state" : {
-        "branch" : "main",
-        "revision" : "398f0bf642bee17531a28d49fc13e1f60171be86"
+        "revision" : "26c314c3a29024a4de661dd09916d95057d1f98f",
+        "version" : "0.1.0"
       }
     }
   ],

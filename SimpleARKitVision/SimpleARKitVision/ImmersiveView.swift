@@ -17,8 +17,8 @@ struct ImmersiveView: View {
         RealityView { content in
         }
         .task {
-            for await anchor in ARUnderstanding.handUpdates {
-                switch anchor.chirality {
+            for await update in ARUnderstanding.handUpdates {
+                switch update.anchor.chirality {
                 case .left:
                     // TODO: handle left hand update
                     break
