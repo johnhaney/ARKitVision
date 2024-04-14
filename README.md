@@ -2,7 +2,16 @@
 
 This project was awarded Best Developer Tool / Best Open Source at Vision Dev Camp 2024 [https://visiondevcamp.org]
 
-Includes two template projects to use as starters and customize:
+Includes three template projects to use as starters and customize:
+
+**ARVisualizer**
+* Project which uses [https://github.com/johnhaney/ARUnderstanding] and shows all the visualizations available, including:
+  * Purple Dots at each hand joint
+  * Magenta Dot tracked to the device position, but placed in front of the device by 0.2 metters (so you will perceive this ad directly in front of your face)
+  * Translucent orange mesh over the mesh of scene understanding elements
+  * Translucent blue mesh over vertical and horizontal planes detected
+  * Cyan dots over any other World Tracked anchors
+  * Green plane over any Image anchors
 
 **Common Space**
 * Template project which will go into an immersive space looking for an image anchor
@@ -13,10 +22,10 @@ Includes two template projects to use as starters and customize:
 **SimpleARKitVision**
 * Provides a code wrapper around setting up an immersive space to be able to take advantage of the various detectors and providers available in ARKit in visionOS
 * This includes:
-*   Hand Tracking
-*   Plane Detection
-*   Scene Reconstruction
-*   World tracking
-*   Image tracking
+  * Hand Tracking
+  * Plane Detection
+  * Scene Reconstruction
+  * World tracking
+  * Image tracking
 
 See Apple's documentation ARKit in visionOS [https://developer.apple.com/documentation/arkit/arkit_in_visionos] for a great intro to these features.
