@@ -1,5 +1,9 @@
 # ARKitVision
 
+[<img src="https://img.youtube.com/vi/f5Rdk0a5lB4/hqdefault.jpg" width="600" height="300"
+/>](https://www.youtube.com/embed/f5Rdk0a5lB4)
+
+
 This project was awarded Best Developer Tool / Best Open Source at Vision Dev Camp 2024 [https://visiondevcamp.org]
 
 Includes three template projects to use as starters and customize:
