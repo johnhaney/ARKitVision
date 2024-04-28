@@ -23,6 +23,13 @@ Includes three template projects to use as starters and customize:
 * Then you can add content relative to the homeEntity or just use it for converting transforms relative to the homeEntity
 * This will create a common coordinate system you could use to share between devices visiting the same location
 
+**ImmersiveAware**
+* GeometryReader3D and NamedCoordinateSpace used to read the position relative to the Immersive Scene
+* PositionManager receives this update and manages the state of the window as being either near, far, or none.
+* When the window position moves to either near or far, PositionManager updates state and queues up Speech to speak the near or far state
+* This simple example is one you can build on to make apps aware of your app's Windows and Volumes and their position in Immersive Scene
+  * This also means they know position relative to each other
+
 **SimpleARKitVision**
 * Provides a code wrapper around setting up an immersive space to be able to take advantage of the various detectors and providers available in ARKit in visionOS
 * This includes:
