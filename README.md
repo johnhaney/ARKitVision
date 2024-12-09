@@ -23,6 +23,14 @@ Includes three template projects to use as starters and customize:
 * Then you can add content relative to the homeEntity or just use it for converting transforms relative to the homeEntity
 * This will create a common coordinate system you could use to share between devices visiting the same location
 
+**HandGestureApp**
+* Project which uses [https://github.com/johnhaney/HandGesture] and shows all the included HandGestures:
+  * ClapGesture (two hands together)
+  * FingerGunGesture (index finger pointer, thumb up/down)
+  * HoldingSphereGesture (gives a Sphere which could fit within one curved hand)
+  * PunchGesture (Fist transform and velocity)
+  * SnapGesture (Pre-snap and post-snap indication)
+
 **ImmersiveAware**
 * GeometryReader3D and NamedCoordinateSpace used to read the position relative to the Immersive Scene
 * PositionManager receives this update and manages the state of the window as being either near, far, or none.

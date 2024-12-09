@@ -1,0 +1,24 @@
+{
+  "originHash" : "78cea5ad74422fe545b914764f348c18b1a05db92da2d20003707c993e4d85dd",
+  "pins" : [
+    {
+      "identity" : "arunderstanding",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/johnhaney/ARUnderstanding",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3ee56e24d4a0597aaaa3318c23fd19826de04bc1"
+      }
+    },
+    {
+      "identity" : "handgesture",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/johnhaney/HandGesture",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6857a5fab6ba25379414bc0f371ebd59a8a901f0"
+      }
+    }
+  ],
+  "version" : 3
+}
