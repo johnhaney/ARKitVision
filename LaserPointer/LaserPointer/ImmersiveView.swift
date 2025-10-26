@@ -7,9 +7,8 @@
 
 import SwiftUI
 import RealityKit
-import RealityKitContent
-import ARUnderstanding
 import GameController
+import ARKit
 
 struct ImmersiveView: View {
     let leftAim: Entity = Entity()
@@ -21,10 +20,6 @@ struct ImmersiveView: View {
     static var colorIndex: Int = 0
     var body: some View {
         RealityView { content in
-            // Add the initial RealityKit content
-            if let immersiveContentEntity = try? await Entity(named: "Immersive", in: realityKitContentBundle) {
-                content.add(immersiveContentEntity)
-            }
             content.add(leftAim)
             let laser = ModelEntity(mesh: .generateCylinder(height: 10, radius: 0.0001), materials: [SimpleMaterial(color: .orange, roughness: 1, isMetallic: false)])
             laser.transform = Transform(rotation: .init(angle: .pi/2, axis: [1,0,0]), translation: [0,0,-5])
