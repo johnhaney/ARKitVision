@@ -4,9 +4,9 @@
 />](https://www.youtube.com/embed/f5Rdk0a5lB4)
 
 
-This project was awarded Best Developer Tool / Best Open Source at Vision Dev Camp 2024 [https://visiondevcamp.org]
+The original project was awarded Best Developer Tool / Best Open Source at Vision Dev Camp 2024 [https://visiondevcamp.org]
 
-Includes three template projects to use as starters and customize:
+Includes template projects to use as starters and customize:
 
 **ARVisualizer**
 * Project which uses [https://github.com/johnhaney/ARUnderstanding] and shows all the visualizations available, including:
@@ -23,6 +23,13 @@ Includes three template projects to use as starters and customize:
 * Then you can add content relative to the homeEntity or just use it for converting transforms relative to the homeEntity
 * This will create a common coordinate system you could use to share between devices visiting the same location
 
+**GameControllerCheck**
+* Shows diagnostics for Playstation VR2 Spatial Controllers and Logitech Muse when connected
+* Note that spatial positioning is only showing when in Immersive Space at the moment
+* Controller input from PSVR2 controllers seems to only work when:
+  * GameControllerCheck's window is active and/or showing the immersive space
+  * You begin button presses while looking away from the app's window
+
 **HandGestureApp**
 * Project which uses [https://github.com/johnhaney/HandGesture] and shows all the included HandGestures:
   * ClapGesture (two hands together)
@@ -37,6 +44,10 @@ Includes three template projects to use as starters and customize:
 * When the window position moves to either near or far, PositionManager updates state and queues up Speech to speak the near or far state
 * This simple example is one you can build on to make apps aware of your app's Windows and Volumes and their position in Immersive Scene
   * This also means they know position relative to each other
+
+**LaserPointer**
+* Adds a laser pointer to the Logitech Muse when detected
+* Press the button to change the laser pointer to different colors
 
 **SimpleARKitVision**
 * Provides a code wrapper around setting up an immersive space to be able to take advantage of the various detectors and providers available in ARKit in visionOS
